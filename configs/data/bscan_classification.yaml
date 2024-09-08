@@ -1,0 +1,5 @@
+_target_: src.data.bscan_classification_datamodule.BscanClassificationDataModule
+data_dir: ${paths.data_dir}zeiss-ht-classification-20240620/bscan_ht_classification/
+batch_size: 8 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
+img_size: [512,512]
+num_workers: 16
